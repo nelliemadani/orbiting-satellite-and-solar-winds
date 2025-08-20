@@ -23,22 +23,22 @@ Developed as part of a computational physics study on perturbed orbits.
 
   $$\vec{F}_g = -\frac{GMm}{r^3}\,\vec{r}, \quad r=\|\vec{r}\|$$  
 
-- In component form with a constant wind acceleration \(W\) along \(+\hat{\imath}\):  
+- In component form with a constant wind acceleration $$\(W\)$$ along $$\(+\hat{\imath}\)$$:  
 
   $$\ddot{x} = -\frac{GM}{r^3}x + W, \qquad \ddot{y} = -\frac{GM}{r^3}y$$  
 
 ### Initial Conditions
-- Choose a circular orbit when \(W=0\).  
-- Position: \((x_0, y_0) = (r_0, 0)\).  
-- Velocity: \((v_x, v_y) = \left(0, \sqrt{\tfrac{GM}{r_0}}\right)\).  
+- Choose a circular orbit when $$\(W=0\)$$.  
+- Position: $$\((x_0, y_0) = (r_0, 0)\)$$.  
+- Velocity: $$\((v_x, v_y) = \left(0, \sqrt{\tfrac{GM}{r_0}}\right)\)$$.  
 
 ### Numerical Solution
-- Convert to first-order ODE system for state \([x,\,y,\,v_x,\,v_y]\).  
-- Integrate with **RK4**; tune \(\Delta t\) for stability vs. cost.  
+- Convert to first-order ODE system for state $$\([x,\,y,\,v_x,\,v_y]\)$$.  
+- Integrate with **RK4**; tune $$\(\Delta t\)$$ for stability vs. cost.  
 
 ---
 
 ## Results (Qualitative)
-- With \(W=0\): circular trajectory maintained.  
-- With \(W \neq 0\): gradual deviation and orbit distortion over time.  
+- With $$\(W=0\)$$: circular trajectory maintained.  
+- With $$\(W \neq 0\)$$: gradual deviation and orbit distortion over time.  
 - Demonstrates sensitivity of orbital dynamics to small external forces.  
