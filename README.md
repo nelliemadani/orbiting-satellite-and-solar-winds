@@ -33,7 +33,7 @@ Developed as part of a computational physics study on perturbed orbits.
 - Velocity: $$\((v_x, v_y) = \left(0, \sqrt{\tfrac{GM}{r_0}}\right)\)$$.  
 
 ### Numerical Solution
-- Convert to first-order ODE system for state $$\([x,\,y,\,v_x,\,v_y]\)$$.  
+- Convert to first-order ODE system for state $$\([x,\y,\v_x,\v_y]\)$$.  
 - Integrate with **RK4**; tune $$\(\Delta t\)$$ for stability vs. cost.  
 
 ---
